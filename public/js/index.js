@@ -32,4 +32,15 @@ window.onload = function(){
     
 
     container.style.display = 'block';
+
+    let menu = document.querySelector('#menu');
+    let logo = document.querySelector('.logoDH');
+
+    logo.addEventListener('click', () => {
+        menu.classList.toggle('mostrar');
+    })
+    
+    menu.addEventListener('mouseout', () => {
+        menu.classList.remove('mostrar')
+    })
 }
